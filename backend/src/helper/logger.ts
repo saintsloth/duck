@@ -1,6 +1,7 @@
 import winston from 'winston';
 import path from 'path';
 import fs from 'fs';
+import config from 'config';
 
 /**
  * levels:
@@ -34,7 +35,7 @@ export const getLogger = () => {
     exitOnError: false,
     transports: [
       new (winston.transports.File)({
-        level: process.env.LOG_LEVEL_FILE,
+        level: config.get('LOG_LEVEL_FILE'),
         filename: path.join(logFilePath, 'log.log'),
         handleExceptions: true,
         maxsize: 5242880,
@@ -46,7 +47,7 @@ export const getLogger = () => {
         ),
       }),
       new (winston.transports.Console)({
-        level: process.env.LOG_LEVEL_COMSOLE,
+        level: config.get('LOG_LEVEL_CONSOLE'),
         format: winston.format.combine(
           winston.format.colorize(),
           winston.format.timestamp(),
