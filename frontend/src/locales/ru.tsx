@@ -1,0 +1,21 @@
+export default {
+  translation: {
+    username: 'Имя пользователя',
+    validation__required: 'Поле обязательно к заполнению',
+    validation__email_pattern: 'Введите валидный email',
+    validation__min_6: 'Не менее 6 символов',
+    validation__is_ok: 'Значение поля введено корректно',
+    check__username_is_exist: 'Пользователь с указанным Login уже существует',
+    check__email_is_exist: 'Пользователь с указанным Email уже существует',
+    error_message__http: 'Ошибка сетевого запроса',
+    error_message__http_unknown: 'Неизвестная сетевая ошибка',
+    error_message__is_exist: 'Ошибка проверки доступности значения поля для использования',
+    error_message__validation: 'Ошибка валидации',
+    error_message__teapot: 'Непредусмотренная ошибка',
+    error_message__internal_server_error: 'Ошибка сервера',
+    error_message__unexpected: 'Непредвиденная ошибка',
+    email: 'Электронная почта',
+    password: 'Пароль',
+    submit: 'Отправить',
+  },
+};

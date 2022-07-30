@@ -32,7 +32,7 @@
     </package>
     <package name="src.controller">
       <metrics statements="14" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-      <file name="UserController.ts" path="/media/duck/data/workflow/duck-hr/backend/src/controller/UserController.ts">
+      <file name="user-controller.ts" path="/media/duck/data/workflow/duck-hr/backend/src/controller/user-controller.ts">
         <metrics statements="14" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -74,7 +74,7 @@
     </package>
     <package name="src.middleware">
       <metrics statements="17" coveredstatements="14" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="2"/>
-      <file name="GlobalErrorHandler.ts" path="/media/duck/data/workflow/duck-hr/backend/src/middleware/GlobalErrorHandler.ts">
+      <file name="global-error-handler.ts" path="/media/duck/data/workflow/duck-hr/backend/src/middleware/global-error-handler.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -83,7 +83,7 @@
         <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="userMiddlewares.ts" path="/media/duck/data/workflow/duck-hr/backend/src/middleware/userMiddlewares.ts">
+      <file name="user-middlewares.ts" path="/media/duck/data/workflow/duck-hr/backend/src/middleware/user-middlewares.ts">
         <metrics statements="11" coveredstatements="8" conditionals="8" coveredconditionals="3" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -100,7 +100,7 @@
     </package>
     <package name="src.model">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="UserModel.ts" path="/media/duck/data/workflow/duck-hr/backend/src/model/UserModel.ts">
+      <file name="user-model.ts" path="/media/duck/data/workflow/duck-hr/backend/src/model/user-model.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>

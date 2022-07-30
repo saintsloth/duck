@@ -1,0 +1,3 @@
+LOG_LEVEL_CONSOLE: silly
+LOG_LEVEL_FILE: silly
+LOG_LEVEL_DB: http

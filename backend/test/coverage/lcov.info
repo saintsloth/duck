@@ -34,7 +34,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/controller/UserController.ts
+SF:src/controller/user-controller.ts
 FN:18,(anonymous_4)
 FN:25,(anonymous_5)
 FN:12,(anonymous_6)
@@ -96,7 +96,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:src/middleware/GlobalErrorHandler.ts
+SF:src/middleware/global-error-handler.ts
 FN:6,(anonymous_1)
 FNF:1
 FNH:1
@@ -115,7 +115,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:src/middleware/userMiddlewares.ts
+SF:src/middleware/user-middlewares.ts
 FN:4,loggingBefore
 FN:11,loggingAfter
 FNF:2
@@ -147,7 +147,7 @@ BRF:8
 BRH:3
 end_of_record
 TN:
-SF:src/model/UserModel.ts
+SF:src/model/user-model.ts
 FNF:0
 FNH:0
 DA:1,1

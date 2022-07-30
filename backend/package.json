@@ -4,15 +4,14 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "npx eslint --ext .ts ./src/**/*.ts",
+    "lint": "npx eslint . --ext .ts",
     "prebuild": "npx eslint ./src/**/*.ts",
     "build": "tsc",
     "prestart": "npm run build",
-    "start:local": "NODE_ENV=LOCAL node dist/index.js",
-    "start:dev": "NODE_ENV=DEV node dist/index.js",
-    "start:prod": "NODE_ENV=PROD node dist/index.js",
-    "server:watch": "NODE_ENV=LOCAL ts-node-dev --transpile-only src/index.ts",
-    "test:unit": "NODE_ENV=LOCAL jest --config=jest.config.ts"
+    "start:dev": "NODE_ENV=development node dist/index.js",
+    "start:prod": "NODE_ENV=production node dist/index.js",
+    "server:watch": "NODE_ENV=development ts-node-dev --project tsconfig.src.json --inspect --transpile-only src/index.ts",
+    "test:unit": "NODE_ENV=test jest --config=jest.config.ts"
   },
   "author": "duck",
   "license": "ISC",
@@ -38,7 +37,10 @@
   "dependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/config": "^0.0.41",
+    "@types/connect-mongodb-session": "^2.4.4",
+    "@types/cookie-parser": "^1.4.3",
     "@types/cors": "^2.8.12",
+    "@types/express-session": "^1.17.5",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/lodash": "^4.14.182",
     "@types/morgan": "^1.9.3",
@@ -48,10 +50,13 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "config": "^3.3.7",
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-http-context": "^1.2.4",
+    "express-session": "^1.17.3",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "mongoose": "^6.4.3",
@@ -60,6 +65,7 @@
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.8.1",
     "swagger-ui-express": "^4.4.0",
-    "winston": "^3.8.1"
+    "winston": "^3.8.1",
+    "winston-mongodb": "^5.0.7"
   }
 }
